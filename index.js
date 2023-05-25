@@ -1,9 +1,8 @@
 // packages and files need for this application 
-
 const inquirer = require('inquirer');
 const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt');
 const fs = require('fs');
-const generateLogo = require('./lib/generateLogo');
+const generateLogo = require('./lib/generateLogo.js');
 
 const questions = [
     {
@@ -54,8 +53,6 @@ function init() {
     inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt);
     inquirer.prompt(questions)
     .then((criteria) => {
-        console.log(criteria);
-
         fs.writeFile('logo.svg', generateLogo(criteria), (err) => 
             err ? console.log(err) : console.log('Generated logo.svg.')
         );
