@@ -1,4 +1,0 @@
-<svg width="300" height="200">
-    <rect x="65" y="15" width="170" height="170" fill="black"/>
-        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="georgia" font-weight="bold" font-size="60px">ABC</text>
-</svg>
