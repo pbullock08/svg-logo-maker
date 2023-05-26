@@ -53,7 +53,7 @@ function init() {
     inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt);
     inquirer.prompt(questions)
     .then((criteria) => {
-        fs.writeFile('logo.svg', generateLogo(criteria), (err) => 
+        fs.writeFile('./examples/logo.svg', generateLogo(criteria), (err) => 
             err ? console.log(err) : console.log('Generated logo.svg.')
         );
     });
