@@ -4,6 +4,7 @@ const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt');
 const fs = require('fs');
 const generateLogo = require('./lib/generateLogo.js');
 
+//questions for inquirer for users to select the parameters for their logo
 const questions = [
     {
         type: 'maxlength-input',
@@ -48,7 +49,7 @@ const questions = [
 
 ]
 
-// function to initialize app 
+// function to initialize app and generate the svg file given user input
 function init() {
     inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt);
     inquirer.prompt(questions)

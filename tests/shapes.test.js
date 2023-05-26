@@ -1,7 +1,7 @@
-// classes are imported
+// shape classes are imported
 const { Circle, Square, Triangle } = require('../lib/shapes');
 
-// testing suite for Circle
+// testing suite for Circle given a specific input
 describe('Circle', () => {
     describe('render', () => {
         it('should render the code for a white circle with purple SVG text in svg language', () => {
@@ -15,7 +15,7 @@ describe('Circle', () => {
     });
 });
 
-// testing suite for Square
+// testing suite for Square given specific input
 describe('Square', () => {
     describe('render', () => {
         it('should render the code for a black square with yellow ABC text in svg language', () => {
@@ -29,7 +29,7 @@ describe('Square', () => {
     });
 });
 
-// testing suite for Triangle
+// testing suite for Triangle given specific input
 describe('Triangle', () => {
     describe('render', () => {
         it('should render the code for a orange triangle with blue BRB text in svg language', () => {
